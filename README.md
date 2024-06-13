@@ -52,7 +52,7 @@ import com.example.locators.DataTestIdElementLocatorFactory;
 public class HomePage {
     private WebDriver driver;
 
-    @FindByDataTestId("login-button")
+    @FindByDataTestId(datatestid = "login-button")
     private WebElement loginButton;
 
     public HomePage(WebDriver driver) {
