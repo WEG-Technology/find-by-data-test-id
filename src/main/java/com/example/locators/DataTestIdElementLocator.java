@@ -17,7 +17,7 @@ public class DataTestIdElementLocator implements ElementLocator {
         this.searchContext = searchContext;
         FindByDataTestId findByDataTestId = field.getAnnotation(FindByDataTestId.class);
         if (findByDataTestId != null) {
-            by = By.cssSelector(String.format("[data-testid='%s']", findByDataTestId.datatestid()));
+            by = By.cssSelector(String.format("[data-testid='%s']", findByDataTestId.value()));
         } else {
             throw new IllegalArgumentException("Field must be annotated with @FindByDataTestId");
         }
