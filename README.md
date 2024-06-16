@@ -20,7 +20,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
 ### Usage
 
-1. Add the dependency to your project:
+1. Add the dependency and repository to your project:
 
 ```xml
 <dependencies>
@@ -30,7 +30,8 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
    <version>1.1.0-SNAPSHOT</version>
 </dependency>
 </dependencies>
-
+```
+```xml
 <repositories>
 <repository>
    <id>jitpack.io</id>
