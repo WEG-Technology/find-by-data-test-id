@@ -24,10 +24,18 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
 ```xml
 <dependency>
-    <groupId>com.example</groupId>
-    <artifactId>findByDataTestID</artifactId>
-    <version>1.0-SNAPSHOT</version>
+   <groupId>com.example</groupId>
+   <artifactId>findByDataTestID</artifactId>
+   <version>1.1.0-SNAPSHOT</version>
 </dependency>
+
+<repositories>
+<repository>
+   <id>jitpack.io</id>
+   <url>https://jitpack.io</url>
+</repository>
+</repositories>
+
 ```
 
 
@@ -52,7 +60,7 @@ import com.example.locators.DataTestIdElementLocatorFactory;
 public class HomePage {
     private WebDriver driver;
 
-    @FindByDataTestId(datatestid = "login-button")
+    @FindByDataTestId("login-button")
     private WebElement loginButton;
 
     public HomePage(WebDriver driver) {
