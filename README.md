@@ -23,11 +23,13 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 1. Add the dependency to your project:
 
 ```xml
+<dependencies>
 <dependency>
    <groupId>com.example</groupId>
    <artifactId>findByDataTestID</artifactId>
    <version>1.1.0-SNAPSHOT</version>
 </dependency>
+</dependencies>
 
 <repositories>
 <repository>
