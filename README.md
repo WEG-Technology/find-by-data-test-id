@@ -20,7 +20,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
 ### Usage
 
-1. Add the dependency and repository to your project:
+1. #### Add the maven dependency and repository to your maven project:
 
 ```xml
 <dependencies>
@@ -40,7 +40,14 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 </repositories>
 
 ```
+2. #### Add the gradle dependency to your gradle project
 
+```xml
+dependencies {
+compile "com.example:findByDataTestID:1.1.0-SNAPSHOT"
+}
+
+```
 
 ### Installation
 
