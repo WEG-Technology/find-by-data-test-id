@@ -40,23 +40,32 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 </repositories>
 
 ```
-2. #### Add the gradle dependency to your gradle project
+#### 2.1 Add the gradle dependency to your gradle project:
 
-```xml
-dependencies {
-compile "com.example:findByDataTestID:1.1.0-SNAPSHOT"
-}
-
+```
+    dependencies {
+        implementation 'com.example:findByDataTestID:1.1.0-SNAPSHOT'
+    }
+```
+      
+##### 2.2 Add it in your root build.gradle at the end of repositories:
+```
+    dependencyResolutionManagement {
+        repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+        repositories {
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        }
+    }
 ```
 
 ### Installation
-
-1. **Clone the Repository:**
+#### Clone the Repository:
 
    ```sh
-   git clone https://github.com/ercankirbiyik/find-by-datatestid.git
-   cd find-by-datatestid
-    ```
+   git clone https://github.com/ercankirbiyik/findByDataTestID.git
+   cd findByDataTestID
+```
    
 ### How to use in your projects:
 
@@ -84,6 +93,6 @@ public class HomePage {
 }
    ```
 
-### License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
