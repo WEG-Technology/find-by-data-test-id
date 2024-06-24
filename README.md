@@ -1,4 +1,4 @@
-# Find By Data Test ID
+# Find Element By Data Test ID
 
 This project provides a custom annotation `@FindByDataTestId` to locate elements by their `data-testid` attribute using Selenium.
 
@@ -18,7 +18,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 - Selenium WebDriver 4.9.0 or higher
 - Spring Boot 3.1.0 or higher
 
-### Usage
+## Usage
 
 1. #### Add the maven dependency and repository to your maven project:
 
@@ -59,7 +59,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
     }
 ```
 
-### Installation
+## Installation
 #### Clone the Repository:
 
    ```sh
