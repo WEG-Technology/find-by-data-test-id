@@ -1,0 +1,19 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - mvn clean install
+
+deploy:
+  stage: deploy
+  script:
+    - mvn deploy
+  only:
+    - main
+
+cache:
+  paths:
+    - .m2/repository
