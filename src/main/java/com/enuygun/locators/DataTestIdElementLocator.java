@@ -1,6 +1,6 @@
-package com.example.locators;
+package com.enuygun.locators;
 
-import com.example.annotations.FindByDataTestId;
+import com.enuygun.annotations.FindByDataTestId;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
