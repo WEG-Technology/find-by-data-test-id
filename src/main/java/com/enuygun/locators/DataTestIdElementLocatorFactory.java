@@ -1,4 +1,4 @@
-package com.example.locators;
+package com.enuygun.locators;
 
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.support.pagefactory.ElementLocator;
