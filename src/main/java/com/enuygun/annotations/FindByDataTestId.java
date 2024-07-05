@@ -1,4 +1,4 @@
-package com.example.annotations;
+package com.enuygun.annotations;
 
 import java.lang.annotation.*;
 
