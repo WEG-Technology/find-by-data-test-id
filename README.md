@@ -25,7 +25,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 ```xml
 <dependencies>
 <dependency>
-   <groupId>com.example</groupId>
+   <groupId>com.enuygun</groupId>
    <artifactId>findByDataTestID</artifactId>
    <version>1.1.0-SNAPSHOT</version>
 </dependency>
@@ -44,7 +44,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
 ```
     dependencies {
-        implementation 'com.example:findByDataTestID:1.1.0-SNAPSHOT'
+        implementation 'com.enuygun:findByDataTestID:1.1.0-SNAPSHOT'
     }
 ```
       
@@ -70,11 +70,11 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 ### How to use in your projects:
 
    ```
-import com.example.annotations.FindByDataTestId;
+import com.enuygun.annotations.FindByDataTestId;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import com.example.locators.DataTestIdElementLocatorFactory;
+import com.enuygun.locators.DataTestIdElementLocatorFactory;
 
 public class HomePage {
     private WebDriver driver;
