@@ -1,5 +1,4 @@
 ![](https://bugbug-homepage.s3.eu-central-1.amazonaws.com/data_testid_attributes_e8b2ed17fe.png)
-![Build Status](https://img.shields.io/badge/tests-unknown-lightgrey)
 
 # Find Element By Data Test ID
 
