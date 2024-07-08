@@ -40,5 +40,5 @@ build/
 # GitLab CI/CD configuration file
 gitlab-ci.yml
 
-# Sonarlint
-.sonarlint/
+# SonarLint configuration
+.idea/sonarlint/
