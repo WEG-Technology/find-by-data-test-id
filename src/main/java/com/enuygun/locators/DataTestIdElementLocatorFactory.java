@@ -19,3 +19,4 @@ public class DataTestIdElementLocatorFactory implements ElementLocatorFactory {
         return new DataTestIdElementLocator(searchContext, field);
     }
 }
+

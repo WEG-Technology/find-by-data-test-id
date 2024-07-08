@@ -1,3 +1,6 @@
+![](https://bugbug-homepage.s3.eu-central-1.amazonaws.com/data_testid_attributes_e8b2ed17fe.png)
+![Build Status](https://img.shields.io/badge/tests-unknown-lightgrey)
+
 # Find Element By Data Test ID
 
 This project provides a custom annotation `@FindByDataTestId` to locate elements by their `data-testid` attribute using Selenium.
@@ -17,6 +20,14 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 - Maven 3.6.0 or higher
 - Selenium WebDriver 4.9.0 or higher
 - Spring Boot 3.1.0 or higher
+
+## Installation
+#### Clone the Repository:
+
+   ```sh
+   git clone https://github.com/ercankirbiyik/findByDataTestID.git
+   cd findByDataTestID
+```
 
 ## Usage
 
@@ -59,14 +70,6 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
     }
 ```
 
-## Installation
-#### Clone the Repository:
-
-   ```sh
-   git clone https://github.com/ercankirbiyik/findByDataTestID.git
-   cd findByDataTestID
-```
-   
 ### How to use in your projects:
 
    ```

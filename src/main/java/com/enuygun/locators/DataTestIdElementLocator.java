@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 public class DataTestIdElementLocator implements ElementLocator {
 
     private final SearchContext searchContext;
-    private final By by;
+    public final By by;
 
     public DataTestIdElementLocator(SearchContext searchContext, Field field) {
         this.searchContext = searchContext;
@@ -33,3 +33,5 @@ public class DataTestIdElementLocator implements ElementLocator {
         return searchContext.findElements(by);
     }
 }
+
+
