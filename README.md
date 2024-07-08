@@ -1,5 +1,6 @@
 ![](https://bugbug-homepage.s3.eu-central-1.amazonaws.com/data_testid_attributes_e8b2ed17fe.png)
-
+![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)
+![Java](https://img.shields.io/badge/Java-17+-blue)
 # Find Element By Data Test ID
 
 This project provides a custom annotation `@FindByDataTestId` to locate elements by their `data-testid` attribute using Selenium.
@@ -30,7 +31,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
 ## Usage
 
-1. #### Add the maven dependency and repository to your maven project:
+#### 1. Add the maven dependency and repository to your maven project:
 
 ```xml
 <dependencies>
@@ -50,17 +51,19 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 </repositories>
 
 ```
+
 #### 2.1 Add the gradle dependency to your gradle project:
 
-```
-    dependencies {
+``` java
+dependencies {
         implementation 'com.enuygun:findByDataTestID:1.1.0-SNAPSHOT'
-    }
+             }
 ```
       
 ##### 2.2 Add it in your root build.gradle at the end of repositories:
-```
-    dependencyResolutionManagement {
+
+``` java
+dependencyResolutionManagement {
         repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
         repositories {
         mavenCentral()
@@ -71,7 +74,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
 ### How to use in your projects:
 
-   ```
+   ``` java
 import com.enuygun.annotations.FindByDataTestId;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
