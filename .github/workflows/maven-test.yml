@@ -27,22 +27,3 @@ jobs:
 
       - name: Run unit tests
         run: mvn test
-
-      - name: Update README with test result badge
-        if: always()
-        run: |
-          RESULT=${{ job.status }}
-          BADGE_URL="https://img.shields.io/badge/tests-${RESULT}-brightgreen"
-          sed -i.bak 's|!\[Build Status\](.*)|![Build Status]('"${BADGE_URL}"')|g' README.md
-
-      - name: Commit README badge update
-        if: always()
-        env:
-          PERSONAL_ACCESS_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git commit -m 'Update README with test result badge'
-          git push https://ercankirbiyik:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} HEAD:refs/heads/main
-
