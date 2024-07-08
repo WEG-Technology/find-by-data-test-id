@@ -45,3 +45,4 @@ jobs:
           git add README.md
           git commit -m 'Update README with test result badge'
           git push https://ercankirbiyik:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} HEAD:refs/heads/main
+
