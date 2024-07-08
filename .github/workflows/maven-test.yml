@@ -34,16 +34,14 @@ jobs:
           RESULT=${{ job.status }}
           BADGE_URL="https://img.shields.io/badge/tests-${RESULT}-brightgreen"
           sed -i.bak 's|!\[Build Status\](.*)|![Build Status]('"${BADGE_URL}"')|g' README.md
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit README badge update
         if: always()
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
           git commit -m 'Update README with test result badge'
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
+          git push https://${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/${{ github.repository }} HEAD:${{ github.ref }}
