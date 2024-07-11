@@ -25,7 +25,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 #### Clone the Repository:
 
    ```sh
-   git clone https://github.com/ercankirbiyik/findByDataTestID.git
+   git clone https://github.com/WEG-Technology/find-by-data-test-id.git
    cd findByDataTestID
 ```
 
