@@ -26,7 +26,7 @@ This project provides a custom annotation `@FindByDataTestId` to locate elements
 
    ```sh
    git clone https://github.com/WEG-Technology/find-by-data-test-id.git
-   cd cd find-by-data-test-id
+   cd find-by-data-test-id
 ```
 
 ## Usage
